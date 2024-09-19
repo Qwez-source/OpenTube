@@ -1,26 +1,26 @@
 # OpenTube
-Open-source alternative youtube client.
+Альтернативный клиент ютуба в консоли без `youtube api`.
 
 _______________________
 
-# Installing
-Everything is simple here, install the necessary libraries and run the client:
+# Установка
+Все очень просто, нужно лишь установить необходимые библиотеки:
 ```python
 pip install playwright requests pillow rich beautifulsoup4
 ```
-Also don't forget about additional files for `playwright`:
+Также не забудьте дополнительные файлы для `playwright`:
 ```python
 playwright install
 ```
 ________________________
 
-# Additionally
+# Дополнительно
 
-## How it works
+## Как это работае
 
-The interface is implemented through the `rich` library; in fact, the client is completely console-based.
-Video search is implemented through regular `invidious` parsing using `beautifulsoup4`.
-Video downloading is implemented by launching a site for downloading videos in `headless` mode (invisible browser).
+Интерфейс реализован через библиотеку `rich`, то-есть, интерфейс моего клиента полностью консольный.
+Поиск видео сделан через обычный парсинг `invidious` через `beautifulsoup4`.
+Скачивание видео реализовано через запуск сайта через `playwright` в `headless` режиме (невидимый браузер).
 
-## Video cleaning
-`OpenTube` does not automatically delete downloaded videos, some may be too lazy to delete videos manually, so I left a file to clear all videos in the current directory
+## Удаление лишних видео
+`OpenTube` не удаляет видео-файлы автоматически, если вам лень удалять все вручную я написал для этого [небольшой скрипт](https://github.com/Qwez-source/OpenTube/blob/main/clear_videos.py)
