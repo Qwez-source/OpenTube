@@ -8,7 +8,7 @@ def find_files_with_extensions(extensions, directory):
                 matches.append(os.path.join(root, file))
     return matches
 
-video_extensions = ['.mp4', '.avi', '.mov', '.mkv', '.flv', '.wmv'] # list of video extensions to be deleted
+video_extensions = ['.mp4', '.avi', '.mov', '.mkv', '.flv', '.wmv']
 
 current_directory = os.getcwd()
 
@@ -20,8 +20,8 @@ for video_file in video_files:
 for video_file in video_files:
     try:
         os.remove(video_file)
-        print(f"Deleted: {video_file}")
+        print(f"Удален: {video_file}")
     except Exception as e:
-        print(f"Error during deletion: {video_file}: {e}")
+        print(f"Ошибка при удалении {video_file}: {e}")
 
-print("Deleting video files is complete.")
+print("Удаление видеофайлов завершено.")
