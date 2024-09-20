@@ -1,6 +1,7 @@
 # OpenTube
 Альтернативный клиент ютуба в консоли без `youtube api`.
 
+![showcase](https://s1.gifyu.com/images/SA9kX.gif)
 _______________________
 
 # Установка
