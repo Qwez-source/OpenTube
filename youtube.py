@@ -14,13 +14,12 @@ from bs4 import BeautifulSoup
 from PIL import Image
 from io import BytesIO
 
-os.system('cls' if os.name == 'nt' else 'clear')
-
 console = Console()
 
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+clear_console()
 
 def display_ascii_art():
     ascii_art = r"""
